@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300&display=swap');
+
+
+/* @media screen and (min-width: 600px) {
+    .hero{
+        min-height: 32rem;
+        padding: 8.5rem 0 3rem;
+    } */
+
+*{
+    padding: 0;
+    margin: 0;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+body{
+    background-color: black;
+}
+
+.main{
+    background-image: url("Asset/Image/bg.jpg");
+    height: 80vh;
+    background-position: center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    position: relative;
+}
+.main .box{
+       height: 80vh;
+       width: 100%;
+       opacity: 0.44;
+       position: absolute;
+       top: 0;
+       background-color: black;
+}
+
+nav{
+    max-width: 80vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 62px;
+}
+nav img{
+    color: red;
+    width: 120px;
+    position: relative;
+    z-index: 8;
+}
+nav button{
+    position: relative;
+    z-index: 8;
+}
+
+.hero{
+    font-family: 'Martel sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    height: calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+    /* padding: 30px; */
+
+}
+.hero>:first-child{
+    font-weight: 900;
+    font-size: 48px;
+    text-align : center
+}
+.h1{
+    font-weight: bolder;
+}
+.hero>:nth-child(2){
+    font-weight: 400;
+    font-size: 24px;
+    text-align : center
+}
+
+.hero>:nth-child(3){
+    font-weight: 400;
+    font-size: 20px;
+    text-align : center
+}
+
+.separation{
+    height: 6px;
+    background-color: rgb(46, 44, 44);
+}
+.btn{
+    padding: 10px  25px ;
+    font-weight: lighter;
+    background-color: white;
+    border-radius: 5px;
+    background-color: rgba(23,23,23,0.7);
+    color: white;
+    border: 1px solid rgba(246,238,238,0.5); 
+}
+
+.btn-red{
+    background-color: red;
+    color: white;
+    padding: 9px 24px;
+    font-size: 22px;
+    border-radius: 4px;
+}
+
+.hero-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 9px 24px;
+}
+
+.main input{
+    padding: 13px 115px 13px 14px;
+    font-size: px;
+    border-radius: 8px;
+    font-weight: 900;
+    background-color: rgba(23,23,23,0.7);
+    border: 1px solid rgba(246,238,238,0.5); 
+    color: white;
+
+}
+
+.btn-red-sm{
+    background-color: red;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    border-radius: 5px;
+    padding: 10px  20px;
+    font-weight: 500;
+}
+
+.tv {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: rgb(239, 231, 231);
+    text-align: center;
+    height: 100%;
+    box-sizing: border-box;
+    min-height: auto;
+    padding: 3.5rem 0;
+}
+
+.tv-container {
+    margin: auto;
+    max-width: calc(100% - 3rem);
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.tv-text, .last-tv {
+    flex-basis: 50%;
+    padding: 0;
+    z-index: 1;
+}
+
+.tv-text-word {
+    padding: 0;
+    width: 100%;
+    text-align: left;
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.tv-h {
+    margin: auto;
+    margin-top: -25px;
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.tv-p {
+    margin: 1rem 0 0;
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-align: left;
+    /* margin-left: 120px; */
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+.image-tv {
+    position: relative;
+}
+
+img {
+    border: 0;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    width: 100%;
+}
+
+.tv-video {
+    z-index: -1;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    max-width: 73%;
+    max-height: 54%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.book {
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translateX(-50%);
+    background: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    width: 20%;
+    min-width: 22rem;
+    padding: 0.25rem 0.65rem;
+    border: 2px solid rgba(128, 128, 128, 0.7);
+    box-shadow: 0 0 2em 0 rgb(0, 0, 0);
+    border-radius: 0.75rem;
+    z-index: 1000;
+}
+
+.book-png {
+    margin: 0 1rem 0 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 15%;
+}
+
+.book-png img {
+    width: 100%; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.png-text {
+    text-align: left;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 0.3rem 0;
+}
+
+.strang {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+
+.downloading {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #0071eb;
+}
+
+.btndown {
+    width: 3rem;
+    height: 3rem;
+    outline: 2px solid rgb(0, 0, 0);
+    outline-offset: -2px;
+    display: block;
+    background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif) center center no-repeat;
+    background-size: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.faq-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 16px;
+    text-align: center;
+}
+
+.faq-container h1 {
+    margin-bottom: 18px;
+    margin-top: 25px;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.faq-question {
+    background-color: #302f2f;
+    color: white;
+    border: none;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    font-size: 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question:focus {
+    outline: none;
+}
+
+.plus-sign {
+    font-size: 45px;
+    font-weight: 100;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    text-align: left;
+}
+
+.faq-item input {
+    display: none;
+}
+
+.faq-item input:checked ~ .faq-answer {
+    max-height: 500px; /* Adjust based on content */
+}
+
+.faq-item input:checked ~ .faq-question .plus-sign {
+    transform: rotate(45deg);
+}
+
+.email-signup {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.email-signup p {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 400;
+    z-index: -1;
+}
+
+.email-signup input {
+    padding: 10px;
+    font-size: 13px;
+    width: 34%;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 300;
+    background-color: rgba(23,23,23,0.7);
+    border: 1px solid rgba(246,238,238,0.5); 
+    color: rgba(241, 236, 236, 0.7);
+    z-index: 1;
+}
+
+.get-started {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #141414;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-heading {
+    margin-bottom: 20px;
+    text-align: start;
+    margin-left: 120px;
+    justify-content: start;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 180px;
+    text-align: start;
+    width: 50px;
+}
+
+.footer-column a {
+    display: block;
+    color: #e4dede;
+   /* margin-left: 175px; */
+   margin-inline-start: 120px;
+   width: calc(100% + 75px);
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 0px;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+/* .language-select {
+    margin-bottom: 10px;
+    margin-left: -955px;
+} */
+.btne{
+    align-items: left;
+    margin-inline-start: -1120px;
+}
+
+.language-select select {
+    padding: 10px;
+    font-size: 14px;
+    background-color: #201f1f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.netflix-india {
+    color: #ece5e5;
+    font-size: 14px;
+    text-align: left;
+    margin-left: 120px;
+margin-top: 20px;
+}
+
